@@ -8,15 +8,33 @@ section{
     height: 100%;
     display: flex;
     justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
 }
 
 .oculto{
     display: none;
 }
 
+/* formulario */
+.formulario{
+    box-shadow: 5px 5px 15px 5px #999893;
+    width: 500px; 
+    margin-top: 50px; 
+    padding: 10px; 
+    border-radius: 2%;
+    flex-wrap: wrap;
+}
+
 
 @media(min-width:1024px){
     .div-burger{
         display: none;
+    }
+}
+
+@media(max-width:550px){
+    .formulario{
+        width: 300px;
     }
 }
